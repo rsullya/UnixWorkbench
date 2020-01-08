@@ -7,7 +7,7 @@ function guessingGame {
 	read num_files
 
         #to find the number of files present
-        file_count=$(ls -1rt | wc -l)
+        file_count=$(ls -A | wc -l)
 
 	while [[ $file_count -ne $num_files ]]
 	do
